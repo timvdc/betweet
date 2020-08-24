@@ -2,7 +2,7 @@ import json
 import pandas as pd
 
 def getFullText(jsonStruct):
-    if 'extended_tweet'in jsonStruct:
+    if 'extended_tweet' in jsonStruct:
         if 'full_text' in jsonStruct['extended_tweet']:
             return jsonStruct['extended_tweet']['full_text']
     elif 'text'in jsonStruct:
