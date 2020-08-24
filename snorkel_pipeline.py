@@ -34,8 +34,8 @@ import sys
 from train import Train as RobBERTTrainer
 from textdataset import TextDataset, load_and_cache_examples
 
-fileList = ['../filter/tweets_covid.json']
-fileList.extend(glob.glob('../1percent/2020_full/*'))
+fileList = ['tweet_data/tweets_covid_sample.json']
+#fileList.extend(glob.glob('../1percent/2020_full/*'))
 
 allTweet = []
 for f in fileList:

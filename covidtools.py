@@ -42,7 +42,7 @@ def processTweetArchive(archiveFile):
 
 def loadCountryCodes():
     allCodes = []
-    with open('data/list_country_codes.txt') as inF:
+    with open('resources/list_country_codes.txt') as inF:
         for line in inF:
             line = line.strip()
             if not line in ('BE', 'NL'):
@@ -51,7 +51,7 @@ def loadCountryCodes():
 
 def loadGemeentenBE():
     allGemeenten = []
-    with open('data/lijst_gemeenten_be.csv') as inF:
+    with open('resources/lijst_gemeenten_be.csv') as inF:
         for line in inF:
             line = line.strip()
             gemeente, provincie = line.split('\t')
@@ -63,7 +63,7 @@ def loadGemeentenBE():
 
 def loadGemeentenNL():
     allGemeenten = []
-    with open('data/lijst_gemeenten_nl.csv') as inF:
+    with open('resources/lijst_gemeenten_nl.csv') as inF:
         allLines = inF.readlines()
     #no header
     for line in allLines[2:]:
